@@ -1,8 +1,9 @@
 # Maintainer: Ashley Whetter <(firstname) @ awhetter.co.uk>
 # Contributor: Eothred <yngve.levinsen@gmail.com>
 pkgname=spotify
-pkgver=1.0.36.120
-_anotherpkgver=.g536a862f
+pkgver=1.0.38.171
+_anotherpkgver=.g5e1cd7b2
+_dashver=22
 pkgrel=2
 pkgdesc="A proprietary music streaming service"
 arch=('x86_64' 'i686')
@@ -15,11 +16,11 @@ source=('spotify'
 md5sums=('cfef2f72647980c639201c6ab39e8534'
 		 'ef25ddc5b6bf8fe1a0d64cbd79e1f7b4')
 
-source_x86_64=("http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${pkgver}${_anotherpkgver}-20_amd64.deb")
-md5sums_x86_64=('8c27d59e63eca56f36688cca9a7da4a5')
+source_x86_64=("http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${pkgver}${_anotherpkgver}-${_dashver}_amd64.deb")
+md5sums_x86_64=('085e994bdc09f03b2ceb4cbe81752d75')
 
-source_i686=("http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${pkgver}${_anotherpkgver}-2_i386.deb")
-md5sums_i686=('1181510a78b329a5f85bba68879d3810')
+source_i686=("http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${pkgver}${_anotherpkgver}-${_dashver}_i386.deb")
+md5sums_i686=('f6f106ecbb5e8b27616a6f76821d5106')
 
 depends=("alsa-lib>=1.0.14" "gconf" "gtk2" "glib2" "nss" "libsystemd" "libxtst" "libx11" "libxss" "libcurl-compat" "desktop-file-utils" "rtmpdump")
 optdepends=('ffmpeg0.10: Adds support for playback of local files'
